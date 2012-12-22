@@ -59,6 +59,12 @@ function cross(){
         z : 0,
     }));
 },
+function distance(){
+    var v1 = new Vec3(1,2,3);
+    var v2 = new Vec3(3,6,2);
+    var len = v1.distance(v2);
+    assert(len === 4.58257569495584);
+},
 function(){
 }
 ].forEach(function(f){
