@@ -36,6 +36,13 @@ function normalize(){
         z : 0.8017837257372732,
     }));
 },
+function scaler(){
+    var v1 = new Vec3(1,2,3);
+    var len = v1.length();
+    var v2 = v1.normalize();
+    var v3 = v2.scaler(len);
+    assert(v3.eq(v1));
+},
 function dot(){
     var v1 = new Vec3(1,2,3);
     var v2 = new Vec3(3,6,2);
