@@ -65,6 +65,11 @@ function distance(){
     var len = v1.distance(v2);
     assert(len === 4.58257569495584);
 },
+function angle(){
+    var v1 = new Vec3(100,100,0);
+    var angle = v1.angleXY();
+    assert(angle === 135);
+},
 function(){
 }
 ].forEach(function(f){
